@@ -1,0 +1,87 @@
+/* Variables de CSS para colores */
+:root {
+    --primary-color: #4A90E2;
+    --secondary-color: #E94E77;
+    --background-color: #f4f4f4;
+    --text-color: #333;
+    --header-font: 'Arial', sans-serif;
+    --body-font: 'Georgia', serif;
+}
+
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: var(--body-font);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Encabezado */
+header {
+    background: var(--primary-color);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Imagen de perfil */
+header img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+/* Secciones */
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Encabezados */
+h1, h2 {
+    font-family: var(--header-font);
+}
+
+/* Listas */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+    padding: 10px;
+    background: #f9f9f9;
+    border-left: 5px solid var(--primary-color);
+}
+
+/* Enlaces del footer */
+footer a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividad */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    header {
+        padding: 15px;
+    }
+
+    section {
+        padding: 15px;
+    }
+}

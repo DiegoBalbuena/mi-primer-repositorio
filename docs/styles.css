@@ -1,0 +1,9 @@
+body {
+    background-color: rgb(128, 128, 128); /* Color inicial */
+}
+
+#color-picker {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

@@ -1,19 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Selector de Color RGB</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicación de Información de Películas</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <h1>Selector de Color RGB</h1>
-    <div id="color-picker">
-        <label for="red">Rojo (R):</label>
-        <input type="range" id="red" min="0" max="255" value="128">
-        <label for="green">Verde (G):</label>
-        <input type="range" id="green" min="0" max="255" value="128">
-        <label for="blue">Azul (B):</label>
-        <input type="range" id="blue" min="0" max="255" value="128">
+    <div class="container">
+        <header>
+            <h1>Aplicación de Información de Películas</h1>
+            <input type="text" id="search-input" placeholder="Buscar películas...">
+            <button id="search-button">Buscar</button>
+        </header>
+        <main>
+            <section id="movie-list">
+                <h2>Películas Populares</h2>
+                <ul id="movies"></ul>
+            </section>
+            <section id="movie-details" class="hidden">
+                <h2>Detalles de la Película</h2>
+                <div id="details"></div>
+                <button id="add-to-favorites">Agregar a Favoritos</button>
+            </section>
+            <section id="favorites">
+                <h2>Películas Favoritas</h2>
+                <ul id="favorites-list"></ul>
+            </section>
+        </main>
     </div>
-    <script src="app.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>

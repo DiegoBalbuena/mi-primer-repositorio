@@ -1,4 +1,4 @@
-const apiKey = 'YOUR API KEY'; // Reemplaza con tu clave API
+const apiKey = 'af7ec40a5997c1318ecd4dbd179cea5e'; // Reemplaza con tu clave API
 const apiUrl = 'https://api.themoviedb.org/3';
 const movieList = document.getElementById('movies');
 const movieDetails = document.getElementById('movie-details');
